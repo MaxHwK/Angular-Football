@@ -1,0 +1,30 @@
+<div class="alert alert-success" *ngIf="change">
+  Footballer supprimé avec succès !
+</div>
+
+<li [ngClass]=" { 'list-group-item': true,
+'list-group-item-info': onBench == true,
+'list-group-item-warning': onBench == false }">
+
+  <div class="row">
+
+    <div class="col-3">
+      <img [src]="photo">
+    </div>
+
+    <div class="col-8">
+      <h3 class="text-center"> {{firstname}} {{lastname}}</h3>
+      <h5 class="text-center">({{post}} | {{club}})</h5>
+      <h6 id="footnationality"><i class="fa fa-globe-americas"></i> {{lastname}} est <b>{{nationality}}</b> ...</h6>
+      <h6><i class="far fa-futbol"></i> Il a marqué pas moins de <b>{{goals}}</b> buts dans sa carrière !</h6>
+      <h6><i class="fa fa-trophy"></i> Ce qui lui a permis de remporter plus de <b>{{trophies}}</b> trophées !</h6>
+
+      <div class="align-btn">
+        <a [routerLink]="['/update', id]" class="btn btn-outline-warning">Modifier <i class="fa fa-edit"></i></a>
+        <button class="btn btn-outline-danger" (click)="deleteFootballer()">Supprimer <i class="fa fa-trash-alt"></i></button>
+      </div>
+    </div>
+
+  </div>
+  
+</li>

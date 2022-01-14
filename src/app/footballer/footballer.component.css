@@ -1,0 +1,42 @@
+h3 {
+  margin-top: 10px;
+  color: orange;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+  max-height: 260px;
+
+}
+
+li {
+  width: 60%;
+  margin: 15px 0px 15px 20%;
+  padding: 4px;
+  border-radius: 10px;
+  background: black;
+  color: azure;
+}
+
+#footnationality {
+  margin-top: 30px;
+}
+
+.btn {
+  width: 30%;
+  margin: 5px;
+}
+
+.align-btn {
+  margin: 20px -20% 10px 20%;
+}
+
+.alert-success {
+  width: 60%;
+  margin: 0px 0px 20px 20%;
+  padding: 10px;
+  opacity: 0.9;
+  border-radius: 10px;
+  text-align: center;
+}

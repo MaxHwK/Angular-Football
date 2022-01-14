@@ -1,0 +1,26 @@
+nav {
+  padding: 10px 0px 10px 20px;
+}
+
+nav i {
+  margin-right: 5px;
+}
+
+footer {
+  color: azure;
+  padding: 12px 0px 0px 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: azure;
+}
+
+footer a:hover {
+  font-style: italic;
+  color: orange;
+}
+
+.navbar-right {
+  color: white !important;
+}

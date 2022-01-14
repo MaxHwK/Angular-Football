@@ -1,0 +1,14 @@
+<ul class="list-group" *ngIf="footballers">
+  <app-footballer *ngFor="let footballer of footballers; let i = index" 
+    [id]="footballer.id"
+    [photo]="footballer.photo"
+    [firstname]="footballer.firstname"
+    [lastname]="footballer.lastname"
+    [post]="footballer.post"
+    [nationality]="footballer.nationality"
+    [club]="footballer.club"
+    [goals]="footballer.goals"
+    [trophies]="footballer.trophies">
+    [onBench]="footballer.onBench">
+  </app-footballer>
+</ul>

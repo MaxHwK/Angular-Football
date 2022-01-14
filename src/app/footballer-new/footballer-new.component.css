@@ -1,0 +1,45 @@
+.container {
+  margin-top: 100px;
+}
+
+h2 {
+  text-shadow: 1px 1px 10px azure;
+}
+
+.form-group {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 30px;
+}
+
+label {
+  background-color: black;
+  color: azure;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 8px;
+  width: 70%;
+  text-align: center;
+}
+
+input {
+  margin: 10px 0px 10px 0px;
+}
+
+.form-check-input {
+  margin-top: 16px;
+}
+
+.btn {
+  width: 30%;
+  margin: 10px 0px 150px 70%;
+}
+
+.alert-success, .alert-danger {
+  width: 60%;
+  margin: 0px 0px 20px 20%;
+  padding: 10px;
+  opacity: 0.9;
+  border-radius: 10px;
+  text-align: center;
+}

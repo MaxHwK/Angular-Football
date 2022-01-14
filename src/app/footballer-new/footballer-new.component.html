@@ -1,0 +1,93 @@
+<div class="container">
+
+  <div class="alert alert-success" *ngIf="change">
+    Nouveau Footballer créé avec succès !
+  </div>
+
+  <div class="alert alert-danger" *ngIf="noverif">
+    Veuillez remplir tous les champs avant de créer !
+  </div>
+
+  <h2 class="text-center">Création d'un nouveau Footballer ...</h2>
+
+  <form>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-6">
+          <label for="firstname">Prénom</label>
+          <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Lionel"
+            [(ngModel)]="footballer.firstname" required>
+        </div>
+
+        <div class="col-6">
+          <label for="lastname">Nom</label>
+          <input type="text" class="form-control" id="lastname" name="lastname" placeholder="MESSI"
+            [(ngModel)]="footballer.lastname" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <label for="photo">Lien d'une Photo</label>
+          <input type="text" class="form-control" id="photo" name="photo" placeholder="https://www.foot.com/photo.jpg"
+            [(ngModel)]="footballer.photo" required>
+        </div>
+
+        <div class="col-6">
+          <label for="post">Poste</label>
+          <input type="text" class="form-control" id="post" name="post" placeholder="Attaquant"
+            [(ngModel)]="footballer.post" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <label for="nationality">Nationalité</label>
+          <input type="text" class="form-control" id="nationality" name="nationality" placeholder="Argentin"
+            [(ngModel)]="footballer.nationality" required>
+        </div>
+
+        <div class="col-6">
+          <label for="club">Club</label>
+          <input type="text" class="form-control" id="club" name="club" placeholder="PSG" [(ngModel)]="footballer.club"
+            required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <label for="goals">Nombre de buts</label>
+          <input type="number" class="form-control" id="goals" name="goals" placeholder="Nombre de buts"
+            [(ngModel)]="footballer.goals" required>
+        </div>
+
+        <div class="col-6">
+          <label for="trophies">Nombre de trophées</label>
+          <input type="number" class="form-control" id="trophies" name="trophies" placeholder="Nombre de trophées"
+            [(ngModel)]="footballer.trophies" required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-6">
+          <div class="form-check">
+            <label class="form-check-label">Mettre sur le banc</label>
+            <input type="radio" name="onBench" class="form-check-input" [value]="true" [(ngModel)]="footballer.onBench">
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">Mettre sur le terrain</label>
+            <input type="radio" name="onBench" class="form-check-input" [value]="false"
+              [(ngModel)]="footballer.onBench"> 
+          </div>
+        </div>
+
+        <div class="col-6">
+          <button class="btn btn-primary" (click)="newFootballer()">Créer <i class="fa fa-plus-circle"></i></button>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+</div>
